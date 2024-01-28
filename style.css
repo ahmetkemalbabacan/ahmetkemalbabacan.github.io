@@ -1,0 +1,149 @@
+#linkcontainer {
+    display: flex;
+    flex-wrap:wrap;
+    float: right; 
+    }
+
+#linkcontainer > div {
+    font-family: Calibri;
+    font-size: 16px;
+    margin: 0px 30px 0px 0px;
+    background-color: white;
+    padding: 6px;
+    border-radius: 32px;
+    }
+
+#linkcontainer > div > a {
+    text-decoration:none;
+    color:black;
+    }
+
+#linkcontainer > div > a:hover {
+    text-decoration-line:underline;
+    } 
+
+#maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    background-color: white;
+    }
+
+#maincontainer-advanced {
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    background-color: white;
+    }
+
+a {text-align: center; line-height: 0;}
+
+.sbar {
+    width: 500px;
+    border: 2px;
+    border-radius: 25px;
+    border-style:dashed;
+    border-color: rgb(216, 216, 216);
+    line-height: 44px;
+    padding: 0 0 0 20px;
+    margin: 30px 0 30px 2px;
+    font-size: 16px;
+    color:rgb(70, 70, 70);
+    outline: none;
+    }
+
+.sbar:hover {
+    border-style: solid;
+    background-color: rgb(252, 252, 252);
+    }
+
+.sbar:focus {
+    border-style: solid;
+    background-color: rgb(252, 252, 252);
+    border-top-color: rgb(171, 199, 173);
+    border-bottom-color: rgb(201, 173, 173);
+    border-left-color: rgb(196, 187, 63);
+    border-right-color: rgb(196, 187, 63);
+    }
+
+.sbutton {
+    border-radius: 22px;
+    line-height: 44px;
+    font-size: 14px;
+    padding: 0 20px 0 20px;
+    outline:none;
+    background-color: rgb(255, 255, 255);
+    border: dashed;
+    border-width: 2px;
+    border-color: rgb(216, 216, 216);
+    color:grey;
+    margin: 0 6px 0 6px;
+    }
+
+.sbutton:hover {
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(216, 216, 216);
+    background-color: rgb(250, 250, 250);
+    color:black;
+    }
+
+.sbutton:active {
+    border: solid;
+    border-width: 2px;
+    border-top-color: rgb(171, 199, 173);
+    border-bottom-color: rgb(201, 173, 173);
+    border-left-color: rgb(196, 187, 63);
+    border-right-color: rgb(196, 187, 63);
+
+    }
+
+.asbutton {
+    border-radius: 22px;
+    line-height: 44px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 30px 0 30px;
+    outline:none;
+    background-color: #4d90fe;
+    border: solid;
+    border-width: 1px;
+    border-color: #3884ff;
+    color:rgb(255, 255, 255);
+    margin: 0 6px 0 6px;
+    }
+
+.asbutton:hover {
+    border: solid;
+    border-width: 1px;
+    border-color: #4d90fe;
+    background-color: #3884ff;
+    color:rgb(255, 255, 255);
+    }
+
+.asbutton:active {
+    background-color: #4d90fe;
+    border-color: #3884ff;
+    }
+
+@media (max-width: 800px) {
+    .sbar {
+        width: 400px;
+    }
+
+@media (max-width: 600px) {
+    .sbar {
+        width: 300px;
+    }
